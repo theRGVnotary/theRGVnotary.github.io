@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--
+  File: index.html
+  Project: The RGV Notary | Mobile notary services in the Rio Grande Valley
+  Created: 02.06.2026
+  Updated: 02.10.2026
+  Author: Faro Digital Studio
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>The RGV Notary | Mobile Notary in Harlingen & the Rio Grande Valley</title>
+
+  <meta name="description"
+    content="The RGV Notary provides convenient mobile notary services across Cameron, Hidalgo & Willacy Counties and the wider Rio Grande Valley. Flexible evenings and weekends by appointment for titles, powers of attorney, affidavits and more.">
+  <meta name="keywords"
+    content="The RGV Notary,mobile notary Harlingen,mobile notary San Benito,mobile notary Raymondville,notary near me Rio Grande Valley,RGV mobile notary,Texas notary public,vehicle title notarization,power of attorney notarization,affidavit notarization">
+  <link rel="canonical" href="https://thergvnotary.com/">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="The RGV Notary | Mobile Notary in the Rio Grande Valley">
+  <meta property="og:description"
+    content="Mobile notary serving Cameron, Hidalgo & Willacy Counties in the Rio Grande Valley. We come to you for titles, powers of attorney, affidavits and more. Flexible evenings and weekends by appointment.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thergvnotary.com/">
+  <meta property="og:image" content="https://thergvnotary.com/assets/img/og-thergvnotary.jpg">
+
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Notary",
+      "name": "The RGV Notary",
+      "url": "https://thergvnotary.com/",
+      "image": "https://thergvnotary.com/assets/img/logo.svg",
+      "description": "Mobile notary serving Cameron, Hidalgo and Willacy Counties in the Rio Grande Valley. We come to you for titles, powers of attorney, affidavits and more. Flexible evenings and weekends by appointment.",
+      "email": "schedule@thergvnotary.com",
+      "telephone": "+1-956-365-9227",
+      "areaServed": [
+        "Cameron County TX",
+        "Hidalgo County TX",
+        "Willacy County TX"
+      ],
+      "serviceType": "Mobile Notary Public"
+    }
+  </script>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Page-specific tweaks (minimal) -->
+  <style>
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-logo {
+      max-width: 520px;
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 991.98px) {
+      .hero-logo {
+        max-width: 380px;
+      }
+    }
+
+    /* Card under the logo (no longer used, kept for future flexibility) */
+    .hero-logo-card {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-logo-card .floating-card {
+      position: static;
+      transform: none;
+      margin-top: 0.4rem;
+      padding: 0.75rem 1rem;
+    }
+
+    .hero-cta .btn-primary,
+    .hero-cta .btn-secondary,
+    .hero-cta .btn-outline {
+      margin-right: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-stats {
+      margin-top: 1.75rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats .stat-item {
+      flex: 1 1 180px;
+      text-align: center;
+    }
+
+    .hero-stats .stat-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-stats .stat-number {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .hero-stats .stat-label {
+      font-size: 0.9rem;
+    }
+
+    .highlight {
+      color: var(--accent-color);
+      font-weight: 600;
+    }
+
+    /* About section highlight card */
+    .about-highlight-card {
+      display: flex;
+      justify-content: center;
+      margin: 0.75rem 0 0.5rem;
+    }
+
+    .about-highlight-card .floating-card {
+      position: static;
+      transform: none;
+      padding: 0.75rem 1rem;
+    }
+
+    .about-highlight-card .card-content {
+      text-align: center;
+    }
+
+    .about-highlight-card .icon i {
+      font-size: 1.6rem;
+    }
+
+    /* Contact tweaks */
+    .contact-details .detail-item + .detail-item {
+      margin-top: 0.5rem;
+    }
+
+    .form-wrapper ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    .form-wrapper ul li + li {
+      margin-top: 0.4rem;
+    }
+
+    /* Footer compression and social icon sizing */
+    #footer .footer-top {
+      padding-top: 1.25rem;
+      padding-bottom: 0.75rem;
+      text-align: center;
+    }
+
+    #footer .social-links {
+      gap: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    #footer .social-links a i {
+      font-size: 1.8rem;
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NQVJJCZGY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-7NQVJJCZGY');
+  </script>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename mb-0">The RGV Notary</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://share.google/RkebzT13MgV8Ccvp3" target="_blank" rel="noopener">Schedule</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 data-aos="fade-up" data-aos-delay="200">Mobile Notary Serving the Rio Grande Valley</h1>
+              <p data-aos="fade-up" data-aos-delay="300">
+                <span class="highlight">Mobile notary</span> serving the greater
+                <span class="highlight">Rio Grande Valley</span>. We come to you for
+                <span class="highlight">titles, powers of attorney, affidavits</span> and more.
+                <span class="highlight">Flexible evenings and weekends</span> by appointment.
+              </p>
+              <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://share.google/RkebzT13MgV8Ccvp3" target="_blank" rel="noopener"
+                  class="btn-primary">Schedule an Appointment</a>
+                <a href="mailto:schedule@thergvnotary.com" class="btn-outline">
+                  <i class="bi bi-envelope-open"></i>
+                  Email us
+                </a>
+                <a href="tel:+19563659227" class="btn-outline">
+                  <i class="bi bi-telephone-outbound"></i>
+                  Call now
+                </a>
+              </div>
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                <div class="stat-item">
+                  <div class="stat-icon"><i class="bi bi-car-front"></i></div>
+                  <div class="stat-number">Mobile service</div>
+                  <div class="stat-label">We come to your home, office or agreed public location.</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-icon"><i class="bi bi-geo-alt"></i></div>
+                  <div class="stat-number">Tri-county coverage</div>
+                  <div class="stat-label">
+                    <span class="highlight">Cameron, Hidalgo &amp; Willacy Counties</span>
+                  </div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-icon"><i class="bi bi-clock-history"></i></div>
+                  <div class="stat-number">Flexible hours</div>
+                  <div class="stat-label">Evenings and weekends by appointment.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div data-aos="fade-left" data-aos-delay="300">
+              <div class="hero-image">
+                <img src="assets/img/logo.svg" alt="The RGV Notary logo with service counties"
+                  class="img-fluid hero-logo">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">About</span>
+        <h2>About The RGV Notary</h2>
+
+        <div class="about-highlight-card">
+          <div class="floating-card">
+            <div class="card-content">
+              <div class="icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="text">
+                <h4>Professional &amp; prompt</h4>
+                <p><span class="highlight">Texas commissioned notary public</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          The RGV Notary provides convenient mobile notary services across
+          <span class="highlight">Cameron, Hidalgo &amp; Willacy Counties</span> and the wider
+          <span class="highlight">Rio Grande Valley</span>.
+        </p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h2><span class="highlight">Local, flexible mobile notary</span> for real life paperwork</h2>
+              <p class="lead">
+                We help individuals, families and small businesses get
+                <span class="highlight">important documents</span> signed and notarized correctly without losing hours
+                out of the day sitting in an office.
+              </p>
+
+              <p>
+                Serving clients across Cameron, Hidalgo and Willacy Counties, we travel to homes, hospitals, offices,
+                coffee shops and more. You choose the time and place, we bring the stamp, seal and required ID checks.
+              </p>
+
+              <p>
+                Titles, powers of attorney, affidavits and other documents can feel stressful or time sensitive.
+                Our goal is to keep the process simple: clear communication up front, confirmation of what you need
+                ready, and a smooth signing when we meet.
+              </p>
+
+              <div class="cta-section">
+                <a href="https://share.google/RkebzT13MgV8Ccvp3" target="_blank" rel="noopener"
+                  class="btn-outline">View Google Business Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-wrapper">
+              <img src="assets/img/about/about-square-12.webp"
+                alt="Notary public meeting with client in the Rio Grande Valley" class="img-fluid">
+              <div class="floating-card" data-aos="zoom-in" data-aos-delay="500">
+                <div class="card-content">
+                  <div class="icon">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Mobile across the RGV</h4>
+                    <p><span class="highlight">Cameron, Hidalgo and Willacy Counties</span>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Services</span>
+        <h2>Mobile Notary Services</h2>
+        <p>
+          <span class="highlight">Mobile notary</span> serving the greater Rio Grande Valley. We come to you for
+          <span class="highlight">titles, powers of attorney, affidavits</span> and more by appointment, including
+          <span class="highlight">evenings and weekends</span>.
+        </p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <h3>General notarization</h3>
+              <p>
+                Acknowledgments, jurats and sworn statements for everyday documents that need an impartial witness and
+                official seal.
+              </p>
+              <a href="#contact" class="service-link">
+                Request this service <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Powers of attorney &amp; affidavits</h3>
+              <p>
+                Notarization for powers of attorney, medical and financial directives, affidavits and other personal
+                legal documents.
+              </p>
+              <a href="#contact" class="service-link">
+                Request this service <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-car-front"></i>
+              </div>
+              <h3>Vehicle titles &amp; sales</h3>
+              <p>
+                Title transfers, bill of sale notarization and other DMV related paperwork for cars, trucks, trailers
+                and more.
+              </p>
+              <a href="#contact" class="service-link">
+                Request this service <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-house-door"></i>
+              </div>
+              <h3>Real estate documents</h3>
+              <p>
+                Notarization for deeds, lease agreements and other real estate documents in coordination with your
+                lender or title company.
+              </p>
+              <a href="#contact" class="service-link">
+                Request this service <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <h3>Business &amp; financial forms</h3>
+              <p>
+                Notary support for business documents, bank forms, letters of explanation and other paperwork that
+                requires a notarial act.
+              </p>
+              <a href="#contact" class="service-link">
+                Request this service <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-hospital"></i>
+              </div>
+              <h3>In home &amp; hospital visits</h3>
+              <p>
+                When travel is difficult, we can meet at homes, hospitals, nursing facilities or other agreed locations
+                within the Rio Grande Valley.
+              </p>
+              <a href="#contact" class="service-link">
+                Request this service <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Why Us</span>
+        <h2>Why choose The RGV Notary</h2>
+        <p>
+          A <span class="highlight">flexible, local mobile notary</span> focused on convenience, clear communication
+          and getting your documents done <span class="highlight">right the first time</span>.
+        </p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h2>Convenient, dependable and focused on details</h2>
+              <p>
+                You should not have to rearrange your day to track down a notary. We travel to you, confirm what you
+                need before we meet and walk you through each signature so the notarization is accepted the first time.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-wrapper">
+              <img src="assets/img/about/about-8.webp" alt="Notary reviewing documents with client" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+          <div class="row g-5">
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-car-front"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Mobile convenience</h3>
+                  <p>
+                    We come to your home, office or agreed public location anywhere in
+                    <span class="highlight">Cameron, Hidalgo and Willacy Counties</span>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-calendar-check"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Flexible scheduling</h3>
+                  <p>
+                    If you need evenings or weekends, we coordinate a time that works around your workday and family
+                    schedule.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-check2-circle"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Clear expectations</h3>
+                  <p>
+                    Before we meet, you know what IDs to bring, who must be present and roughly how long the signing
+                    will take.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Local and approachable</h3>
+                  <p>
+                    <span class="highlight">Rio Grande Valley</span> based and focused on long term relationships. Easy
+                    to reach and easy to work with.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Template portfolio / team / testimonials sections preserved for future use; hidden for now to keep the site focused. -->
+    <section id="portfolio" class="portfolio section" style="display:none;"></section>
+    <section id="team" class="team section" style="display:none;"></section>
+    <section id="testimonials" class="testimonials section" style="display:none;"></section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Contact</span>
+        <h2>Request a mobile notary</h2>
+        <p>
+          Use the options below to request an appointment. Include what you need notarized, your preferred date
+          and time, and where in the <span class="highlight">Rio Grande Valley</span> you would like to meet.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="info-item d-flex align-items-start">
+              <div class="info-icon me-3">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+              <div class="info-content">
+                <h4>Quick response, clear steps</h4>
+                <p>
+                  We respond promptly, confirm IDs and documents, and walk you through the signing so everything is
+                  ready when we meet.
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-details">
+
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <i class="bi bi-telephone-outbound"></i>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label"><span class="highlight">Call or text</span></span>
+                  <span class="detail-value">
+                    <a href="tel:+19563659227">(956) 365-9227</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <i class="bi bi-envelope-open"></i>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Email</span>
+                  <span class="detail-value">
+                    <a href="mailto:schedule@thergvnotary.com">schedule@thergvnotary.com</a>
+                  </span>
+                </div>
+              </div>
+
+<!--          
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Service area</span>
+                  <span class="detail-value">
+                    Mobile service across <span class="highlight">Cameron, Hidalgo &amp; Willacy Counties</span> by
+                    appointment.
+                  </span>
+                </div>
+              </div> 
+-->
+
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="form-wrapper">
+              <div class="form-header d-flex align-items-center mb-2">
+                <div class="form-icon me-2">
+                  <i class="bi bi-calendar-check"></i>
+                </div>
+                <h3 class="mb-0">How to schedule</h3>
+              </div>
+              <br>
+              <p>
+                We handle scheduling through our Google booking link, email, or a phone call.
+              </p>
+              <ul>
+                <li><strong><span class="highlight">Book online:</span></strong> use the
+                  <a href="https://share.google/RkebzT13MgV8Ccvp3" target="_blank" rel="noopener">Book through Google</a>
+                  link to request a time.
+                </li>
+                <br>
+                <li><strong><span class="highlight">Detailed requests:</span></strong> email
+                  <a href="mailto:schedule@thergvnotary.com">schedule@thergvnotary.com</a> with your document type,
+                  preferred date and meeting location.
+                </li>
+              </ul>
+              <br>
+              <p>
+                We are not attorneys licensed to practice law in Texas and may not give legal advice or accept fees for
+                legal advice.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    
+    <br><br>
+
+    <div class="container footer-top">
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://linktr.ee/thergvnotary" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i></a>
+        <a href="https://www.facebook.com/thergvnotary" target="_blank" rel="noopener"><i
+            class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-3">
+      <p>© <span>2026</span> <strong class="px-1 sitename">The RGV Notary</strong> <span>All Rights Reserved</span><br>
+        Powered by <a href="https://farodigitalstudio.com" target="_blank" rel="noopener">Faro Digital Studio</a></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
